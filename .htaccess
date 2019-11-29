@@ -1,0 +1,16 @@
+ErrorDocument 403 /access/forbidden
+ErrorDocument 404 /page/not/found
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    Options -Indexes
+    RewriteEngine	on
+
+    #RewriteCond %{HTTP_HOST} ^oldsite\.ru$ [NC,OR]
+    #RewriteCond %{HTTP_HOST} ^www\.oldsite\.ru$ [NC]
+    #RewriteRule ^(.*)$ http://newsite.ru/$1 [R=301,L]
+
+    RewriteCond     %{SCRIPT_FILENAME}  !-f
+    RewriteCond $1 !^(index\.php|robots\.txt|images|style|scripts)
+    RewriteRule		^(.+) index.php [L]
+</IfModule>

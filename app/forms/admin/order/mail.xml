@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/product/edit" method="POST">
+    <field type="string" name="subject">
+        <property notnull="1"><error>Введите тему письма</error></property>
+    </field>
+    <field type="textarea" name="body"></field>
+</form>

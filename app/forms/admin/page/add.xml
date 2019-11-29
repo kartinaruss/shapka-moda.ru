@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/page/add" method="POST">
+    <field type="string" name="name">
+        <property notnull="1"><error>Пожалуйста, введите название страницы</error></property>
+        <property regexp="@^[-0-9a-z_\/]*$@i"><error>Вы можете использовать только латинские буквы, цифры, дефис, слеш и знак подчеркивания для задания имени страницы</error></property>
+        <property callback="Model_Page::checkIfPageExists"><error>Это имя уже используется, пожалуйста, выберете другое</error></property>
+    </field>
+    <field type="string" name="title">
+        <property notnull="1"><error>Пожалуйста, введите заголовок страницы</error></property>
+    </field>
+    <field type="textarea" name="content"></field>
+    <field type="string" name="keywords"></field>
+    <field type="textarea" name="description"></field>
+    <field type="checkbox" name="dynamic"></field>
+</form>

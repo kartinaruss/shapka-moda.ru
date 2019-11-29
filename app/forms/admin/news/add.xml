@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/news/add" method="POST">
+    <field type="textarea" name="brief">
+        <property notnull="1"><error>Введите краткий текст, отражающий содержание новости</error></property>
+    </field>
+    <field type="textarea" name="content"></field>
+    <field type="string" name="title"></field>
+    <field type="string" name="keywords"></field>
+    <field type="textarea" name="description"></field>
+    <field type="checkbox" name="enable"></field>
+    <field type="hidden" name="pictureKey"></field>
+</form>

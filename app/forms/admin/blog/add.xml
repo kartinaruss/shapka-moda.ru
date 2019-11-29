@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/news/add" method="POST">
+    <field type="textarea" name="brief_wiki"></field>
+    <field type="textarea" name="content_wiki">
+        <property notnull="1"><error>Введите текст новости</error></property>
+    </field>
+    <field type="string" name="name">
+        <property notnull="1"><error>Введите заголовок</error></property>
+    </field>
+    <field type="string" name="key">
+        <property notnull="1"><error>Введите уникальный ключ для формирования ссылки</error></property>
+        <property regexp="@^[-0-9a-z_/]*$@i"><error>Поле содержит недопустимые символы. Разрешены только: [-0-9a-zA-Z_].</error></property>
+        <property callback="Model_Blog::checkIfKeyExists"><error>Такой ключ уже используется. Выберете другой.</error></property>
+    </field>
+    <field type="string" name="title"></field>
+    <field type="string" name="keywords"></field>
+    <field type="textarea" name="description"></field>
+</form>

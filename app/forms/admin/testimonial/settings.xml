@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/feedback/settings" method="POST">
+    <field type="string" name="email"></field>
+</form>

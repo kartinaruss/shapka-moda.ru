@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/upload/file" method="POST">
+    <field type="file" name="file">
+        <property filenotnull="1"><error>Пожалуйста, прикрепите файл</error></property>
+        <property maxfilesize="8000000"><error>Файл слишком большого размера</error></property>
+        <property isloaded="1"><error>Произошла ошибка при загрузке файла</error></property>
+    </field>
+    <field type="checkbox" name="rewrite"></field>
+    <field type="hidden" name="indicator"></field>
+</form>

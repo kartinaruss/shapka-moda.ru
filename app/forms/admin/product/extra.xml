@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/product/edit" method="POST">
+    <field type="string" name="param_name">
+        <property notnull="0"><error>Введите название параметра</error></property>
+    </field>
+    <field type="hidden" name="param_value"></field>
+    <field type="hidden" name="param_price"></field>
+    <field type="hidden" name="param_price_old"></field>
+</form>

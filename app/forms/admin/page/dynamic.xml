@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/page/edit/{ID}" method="POST">
+    <field type="string" name="title" title="Заголовок"></field>
+    <field type="string" name="keywords" title="Meta keywords"></field>
+    <field type="string" name="description" title="Meta description"></field>
+    <field type="submit" name="submit" value="Сохранить"></field>
+</form>

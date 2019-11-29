@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff/options" method="POST">
+    <field type="hidden" name="nothing"></field>
+    <field type="checkbox" name="maincats"></field>
+    <field type="checkbox" name="search"></field>
+    <field type="checkbox" name="blocks"></field>
+    <field type="string" name="tst_count"></field>
+    <field type="radio" name="cats"></field>
+    <field type="radio" name="menu"></field>
+    <field type="radio" name="float"></field>
+    <field type="radio" name="border_radius"></field>
+    <field type="radio" name="needhelp"></field>
+</form>

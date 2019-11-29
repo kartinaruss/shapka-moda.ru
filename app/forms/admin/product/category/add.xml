@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/product/category/add" method="POST">
+    <field type="string" name="name">
+        <property notnull="1"><error>Введите наименование категории</error></property>
+    </field>
+    <field type="string" name="key">
+        <property notnull="1"><error>Введите уникальный ключ для формирования ссылки</error></property>
+        <property regexp="@^[-0-9a-z_/]*$@i"><error>Поле содержит недопустимые символы. Разрешены только: [-0-9a-zA-Z_].</error></property>
+        <property callback="Model_Product::checkIfCategoryKeyExists"><error>Такой ключ уже используется. Выберете другой.</error></property>
+    </field>
+    <field type="textarea" name="description_wiki"></field>
+    <field type="textarea" name="block"></field>
+    <field type="textarea" name="seotext_wiki"></field>
+    <field type="string" name="title"></field>
+    <field type="string" name="keywords"></field>
+    <field type="textarea" name="description"></field>
+    <field type="hidden" name="parent_id"></field>
+    <field type="hidden" name="pictureKey"></field>
+</form>

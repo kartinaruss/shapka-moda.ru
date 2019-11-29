@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="my/product/album" method="POST">
+    <field type="file" name="Filedata">
+        <property filenotnull="1"><error>Attach the file.</error></property>
+        <property isimage="1"><error>It is not a valid image file! You can load JPG, PNG and GIF files.</error></property>
+        <property isloaded="1"><error>Upload error.</error></property>
+    </field>
+</form>

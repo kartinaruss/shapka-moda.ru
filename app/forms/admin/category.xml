@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff" method="POST">
+    <field type="select" name="category">
+        <option array="$cats"></option>
+    </field>
+</form>

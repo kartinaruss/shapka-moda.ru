@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="order" method="POST">
+    <field type="string" name="paymethod">
+        <property notnull="1"><error>Пожалуйста, выберите метод платежа</error></property>
+    </field>
+</form>

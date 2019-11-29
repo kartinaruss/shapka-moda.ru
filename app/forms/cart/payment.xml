@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="order" method="POST">
+    <field type="string" name="phone">
+        <property notnull="1"><error>Пожалуйста, введите номер вашего телефона</error></property>
+        <property regexp="@^[0-9]{10}$@i"><error>Номер телефона должен содержать 10 цифр, без "+7" и "8"</error></property>
+    </field>
+</form>

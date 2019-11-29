@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="auth/login" method="POST">
+    <field type="string" name="email" title="E-mail/логин">
+        <property notnull="1"><error>Пожалуйста, введите ваш e-mail</error></property>
+        <property callback="App_Auth::checkFails"><error>Вы ошибались слишком много, введите защитный код</error></property>
+    </field>
+    <field type="password" name="passwd" title="Пароль">
+        <property notnull="1"><error>Пожалуйста, введите ваш пароль</error></property>
+        <property callback="App_Auth::checkLoginForm"><error>Неверный пароль</error></property>
+    </field>
+    <field type="checkbox" name="remember_me" title="Запомнить меня"></field>
+</form>

@@ -1,0 +1,1 @@
+<!-- BEGIN page -->{page.CONTENT}<!-- END page -->

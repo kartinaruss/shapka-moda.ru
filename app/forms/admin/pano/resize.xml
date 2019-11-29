@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/banner/resize" method="POST">
+    <field type="string" name="x">
+        <property notnull="1"><error>Выберите область для обрезки</error></property>
+    </field>
+    <field type="string" name="y"></field>
+    <field type="string" name="w"></field>
+    <field type="string" name="h"></field>
+</form>

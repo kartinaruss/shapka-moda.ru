@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/upload/image" method="POST">
+    <field type="file" name="file">
+        <property maxfilesize="8000000"><error>Файл слишком большого размера</error></property>
+        <property isimage="1"><error>То - что вы пытаетесь загрузить - не изображение</error></property>
+        <property isloaded="1"><error>Произошла ошибка при загрузке файла</error></property>
+    </field>
+    <field type="checkbox" name="rewrite"></field>
+    <field type="string" name="url"></field>
+    <field type="radio" name="source">
+        <option value="computer"></option>
+        <option value="url"></option>
+        <property notnull="1"><error>Пожалуйста, выберите способ загрузки изображения</error></property>
+        <property listsafe="1"><error>Такого значения нет в списке!</error></property>
+    </field>
+</form>

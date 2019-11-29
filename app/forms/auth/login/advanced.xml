@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="auth/login" method="POST">
+    <field type="string" name="email" title="E-mail/логин">
+        <property notnull="1"><error>Пожалуйста, введите ваш e-mail</error></property>
+    </field>
+    <field type="password" name="passwd" title="Пароль">
+        <property notnull="1"><error>Пожалуйста, введите ваш пароль</error></property>
+        <property callback="App_Auth::checkLoginForm"><error>Неверный пароль</error></property>
+    </field>
+    <field type="captcha" name="captcha" title="Код с картинки">
+        <property url="captcha"></property>
+        <property captcha="1"><error>Вы неверно ввели защитный код</error></property>
+        <property notnull="1"><error>Пожалуйста, введите защитный код с картинки</error></property>
+    </field>
+    <field type="checkbox" name="remember_me" title="Запомнить меня"></field>
+</form>

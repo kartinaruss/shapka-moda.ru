@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/menu/add" method="POST">
+    <field type="string" name="title">
+        <property notnull="1"><error>Напишите название пункта меню</error></property>
+    </field>
+    <field type="string" name="link">
+        <property notnull="1"><error>Введите значение ссылки для данного пункта меню</error></property>
+    </field>
+    <field type="hidden" name="parent_id"></field>
+</form>

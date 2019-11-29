@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff" method="POST">
+    <field type="string" name="justbuy_header"></field>
+    <field type="select" name="justbuy_products">
+        <option array="$products"></option>
+    </field>
+    <field type="checkbox" name="justbuy_on"></field>
+</form>

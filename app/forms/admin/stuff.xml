@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff" method="POST">
+    <field type="string" name="email">
+        <property regexp="#^$|^([a-z0-9_\-\.]+@([a-z0-9_\-]+\.)+[a-z]{2,5})$#i"><error>Некорректный e-mail адрес</error></property>
+    </field>
+    <field type="string" name="skype"></field>
+    <field type="string" name="icq"></field>
+    <field type="string" name="phone"></field>
+    <field type="string" name="phone2"></field>
+    <field type="string" name="site_name"></field>
+    <field type="string" name="ogrn"></field>
+    <field type="string" name="work_hours"></field>
+    <field type="string" name="descript"></field>
+    <field type="string" name="year">
+        <property regexp="#^$|^[0-9]{4}$#i"><error>Неверное значение года</error></property>
+    </field>
+    <field type="string" name="title_postfix"></field>
+    <field type="string" name="currency"></field>
+    <field type="string" name="vk_app_id">
+        <property regexp="#^[0-9]*$#i"><error>Некорректный код</error></property>
+    </field>
+    <field type="string" name="vk_group_id">
+        <property regexp="#^[0-9]*$#i"><error>Некорректный код</error></property>
+    </field>
+    <field type="string" name="phone_mask">
+        <property regexp="#^[\+\-0-9\(\) ]*$#i"><error>Некорректная маска номера телефона</error></property>
+    </field>
+    <field type="string" name="button_order_text">
+        <property notnull="1"><error>Поле не должно быть пустым</error></property>
+    </field>
+    <field type="string" name="shipping">
+        <property regexp="#^[0-9]*$#i"><error>Стоимость доставки может принимать только числовое значение</error></property>
+    </field>
+    <field type="string" name="free_shipping">
+        <property regexp="#^[0-9]*$#i"><error>Стоимость может принимать только числовое значение</error></property>
+    </field>
+    <field type="string" name="link_vk"></field>
+    <field type="string" name="link_fb"></field>
+    <field type="string" name="link_tw"></field>
+    <field type="string" name="link_od"></field>
+    <field type="checkbox" name="enable_popup"></field>
+    <field type="string" name="exit_message"></field>
+    <field type="string" name="online_chat"></field>
+</form>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff" method="POST">
+    <field type="string" name="body_bg_color"></field>
+    <field type="string" name="menu_link_color"></field>
+    <field type="select" name="menu_bg_color"></field>
+    <field type="select" name="menu_bg_opacity"></field> 
+    <field type="string" name="text_color"></field>
+    <field type="string" name="header_color"></field>
+    <field type="string" name="price_color"></field> 
+    <field type="string" name="block_bg_color"></field>
+    <field type="string" name="phone_color"></field>
+    <field type="string" name="link_color"></field>
+    <field type="string" name="foot_bg_color"></field>
+    <field type="string" name="foot_font_color"></field>
+    <field type="string" name="foot_link_color"></field>
+    <field type="string" name="button_bg_color"></field>
+    <field type="string" name="button2_bg_color"></field>
+    <field type="string" name="button_font_color"></field>
+    <field type="string" name="button2_font_color"></field>
+</form>

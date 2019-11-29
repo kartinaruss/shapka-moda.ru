@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/page/edit" method="POST">
+    <field type="string" name="title">
+        <property notnull="1"><error>Пожалуйста, введите название страницы</error></property>
+    </field>
+    <field type="textarea" name="content"></field>
+    <field type="string" name="keywords"></field>
+    <field type="textarea" name="description"></field>
+    <field type="checkbox" name="dynamic"></field>
+</form>

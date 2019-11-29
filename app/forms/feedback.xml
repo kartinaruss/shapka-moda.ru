@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="contact" method="POST">
+    <field type="string" name="name">
+        <property notnull="1"><error>Пожалуйста, введите Ваше имя</error></property>
+    </field>
+    <field type="string" name="email">
+        <property notnull="1"><error>Пожалуйста, введите Ваш e-mail адрес</error></property>
+        <property regexp="#^$|^([a-z0-9_\-\.]+@([a-z0-9_\-]+\.)+[a-z]{2,5})$#i"><error>Некорректный e-mail адрес</error></property>
+    </field>
+    <field type="string" name="phone"></field>
+    <field type="textarea" name="message">
+        <property notnull="1"><error>Пожалуйста, введите текст вашего сообщения</error></property>
+    </field>
+</form>

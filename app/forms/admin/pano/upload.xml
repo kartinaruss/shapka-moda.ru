@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/news/banner/upload" method="POST">
+    <field type="file" name="file">
+        <property filenotnull="1"><error>Attach the file.</error></property>
+        <property maxfilesize="8000000"><error>Your file is too heavy!</error></property>
+        <property isloaded="1"><error>Upload error.</error></property>
+        <property isimage="1"><error>You can upload only images and swf-files.</error></property>
+    </field>
+</form>

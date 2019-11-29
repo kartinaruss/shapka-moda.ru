@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/product/add" method="POST">
+    <field type="string" name="name">
+        <property notnull="1"><error>Введите наименование продукции</error></property>
+    </field>
+    <field type="string" name="code"></field>
+    <field type="string" name="rating"></field>
+    <field type="textarea" name="brief"></field>
+    <field type="textarea" name="description_wiki"></field>
+    <field type="textarea" name="seotext_wiki"></field>
+    <field type="string" name="prioritet">
+        <property notnull="0"><error>Пожалуйста, введите приоритет</error></property>
+        <property regexp="@^[0-9\.]*$@i"><error>Приоритет может иметь только численное значение</error></property>
+    </field>
+    <field type="string" name="price">
+        <property notnull="0"><error>Пожалуйста, введите стоимость товара в рублях</error></property>
+        <property regexp="@^[0-9\.]*$@i"><error>Стоимость может иметь только численное значение</error></property>
+    </field>
+    <field type="string" name="price_old"></field>
+    <field type="select" name="category_id" multiple="1">
+        <property notnull="1"><error>Выберите хотя бы одну категорию</error></property>
+        <option array="$categories"></option>
+    </field>
+    <field type="hidden" name="pictureKey"></field>
+    <field type="checkbox" name="main"></field>
+    <field type="radio" name="label"></field>
+    <field type="string" name="title"></field>
+    <field type="string" name="keywords"></field>
+    <field type="textarea" name="description"></field>
+</form>

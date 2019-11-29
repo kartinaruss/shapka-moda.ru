@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/news/edit" method="POST">
+    <field type="textarea" name="brief_wiki"></field>
+    <field type="textarea" name="content_wiki">
+        <property notnull="1"><error>Введите текст новости</error></property>
+    </field>
+    <field type="string" name="name">
+        <property notnull="1"><error>Введите заголовок</error></property>
+    </field>
+    <field type="string" name="title"></field>
+    <field type="string" name="keywords"></field>
+    <field type="textarea" name="description"></field>
+    <field type="string" name="date">
+        <property regexp="@^$|^[0-9]{2}.[0-9]{2}.[0-2][0-9]{3}$@i"><error>Дата должна быть в формате: ДД.ММ.ГГГГ</error></property>
+    </field>
+</form>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/theme/edit" method="POST">
+    <field type="string" name="name">
+        <property notnull="1"><error>Введите название темы</error></property>
+    </field>
+    <field type="textarea" name="description"></field>
+    <field type="hidden" name="pictureKey"></field>
+</form>

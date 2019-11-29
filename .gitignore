@@ -1,0 +1,8 @@
+.idea
+*-local.php
+/images/*
+/l
+/l2
+*.tsv
+*.dat
+/*.zip

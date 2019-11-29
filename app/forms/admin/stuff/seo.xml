@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff/seo" method="POST">
+    <field type="textarea" name="robots_txt"></field>
+    <field type="file" name="sitemap_xml">
+        <property maxfilesize="8000000"><error>Файл слишком тяжелый!</error></property>
+        <property isloaded="1"><error>Ошибка при загрузке</error></property>
+    </field>
+</form>

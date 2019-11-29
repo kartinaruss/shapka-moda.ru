@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /scripts
+Disallow: /fonts
+Disallow: /styles
+Disallow: /flash
+
+HOST: shapka-moda.ru

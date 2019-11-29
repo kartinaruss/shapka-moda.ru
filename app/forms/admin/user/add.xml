@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/user/add" method="POST">
+    <field type="string" name="email" title="E-mail">
+        <property notnull="1"><error>Пожалуйста, напишите email-адрес для нового пользователя</error></property>
+        <property callback="Model_User::checkIfEmailExists"><error>Этот адрес уже используется</error></property>
+    </field>
+    <field type="string" name="passwd" title="Password">
+        <property notnull="1"><error>Пожалуйста, напишите пароль</error></property>
+    </field>
+    <field type="select" name="role" title="Role">
+        <option value="admin">Admin</option>
+        <property notnull="1"><error>Выберете роль для пользователя</error></property>
+    </field>
+    <field type="string" name="name" title="Name"></field>
+</form>

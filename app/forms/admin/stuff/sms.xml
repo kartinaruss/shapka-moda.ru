@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff/sms" method="POST">
+    <field type="textarea" name="smsc_login"></field>
+    <field type="textarea" name="smsc_pass"></field>
+    <field type="textarea" name="sms_order_client"></field>
+    <field type="textarea" name="sms_order_admin"></field>
+    <field type="textarea" name="sms_order_phone"></field>
+    <field type="checkbox" name="sms_order_enable"></field>
+    <field type="textarea" name="sms_call_client"></field>
+    <field type="textarea" name="sms_call_admin"></field>
+    <field type="textarea" name="sms_call_phone"></field>
+    <field type="checkbox" name="sms_call_enable"></field>
+</form>

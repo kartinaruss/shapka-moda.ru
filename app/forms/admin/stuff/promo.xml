@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff" method="POST">
+    <field type="string" name="promo_header"></field>
+    <field type="string" name="promo_body"></field>
+    <field type="string" name="promo_link"></field>
+    <field type="checkbox" name="promo_on"></field>
+    <field type="checkbox" name="promo_timer"></field>
+    <field type="checkbox" name="promo_reload"></field>
+    <field type="string" name="promo_interval"></field>
+</form>

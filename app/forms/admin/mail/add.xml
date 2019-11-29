@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/mail/add" method="POST">
+    <field type="string" name="login">
+        <property notnull="1"><error>Введите логин</error></property>
+    </field>
+    <field type="string" name="password">
+        <property notnull="1"><error>Введите пароль для доступа к почтовому ящику</error></property>
+        <property minlength="6"><error>Слишком короткий пароль</error></property>
+    </field>
+</form>

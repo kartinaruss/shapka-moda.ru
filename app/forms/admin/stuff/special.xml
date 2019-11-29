@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff" method="POST">
+    <field type="string" name="special_header"></field>
+    <field type="string" name="special_body"></field>
+    <field type="checkbox" name="special_on"></field>
+    <field type="select" name="special_product">
+        <option array="$products"></option>
+    </field>
+</form>

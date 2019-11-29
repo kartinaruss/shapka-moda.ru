@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/product/export/yml" method="POST">
+    <field type="string" name="yml_password">
+        <property notnull="1"><error>Введите ваш секретный код</error></property>
+        <property regexp="@^[-0-9a-z_]*$@i"><error>Поле содержит недопустимые символы. Разрешены только: [-0-9a-zA-Z_].</error></property>
+    </field>
+</form>

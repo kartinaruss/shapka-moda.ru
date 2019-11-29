@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff" method="POST">
+    <field type="string" name="guarantee_header"></field>
+    <field type="string" name="guarantee_body"></field>
+    <field type="string" name="guarantee_link"></field>
+    <field type="checkbox" name="guarantee_on"></field>
+</form>

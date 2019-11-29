@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/news/logo" method="POST">
+    <field type="file" name="file">
+        <property filenotnull="1"><error>Прикрепите файл</error></property>
+        <property maxfilesize="5000000"><error>Файл слишком тяжелый!</error></property>
+        <property isloaded="1"><error>Ошибка при загрузке</error></property>
+        <property isimage="1"><error>Вы можете загружать только изображения</error></property>
+    </field>
+</form>

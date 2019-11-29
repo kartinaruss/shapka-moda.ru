@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="admin/stuff/stat" method="POST">
+    <field type="string" name="google_analytics"></field>
+    <field type="string" name="yandex_metrika"></field>
+    <field type="string" name="google_verification">
+        <property regexp="#^[^ ]*$#i"><error>Некорректный код</error></property>
+    </field>
+    <field type="string" name="yandex_verification">
+        <property regexp="#^[^ ]*$#i"><error>Некорректный код</error></property>
+    </field>
+    <field type="textarea" name="counter"></field>
+    <field type="string" name="ym_counter_id">
+        <property regexp="#^[0-9]*$#i"><error>Некорректный код</error></property>
+    </field>
+</form>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form action="testimonial" method="POST">
+    <field type="string" name="name">
+        <property notnull="1"><error>Пожалуйста, введите Ваше имя</error></property>
+    </field>
+    <field type="string" name="city">
+        <property notnull="1"><error>Пожалуйста, укажите город где Вы живете</error></property>
+    </field>
+    <field type="string" name="phone">
+        <property notnull="0"><error>Пожалуйста, введите Ваш телефон</error></property>
+    </field>
+    <field type="string" name="duties">
+        <property notnull="0"><error>Пожалуйста, укажите кем Вы работаете</error></property>
+    </field>
+    <field type="string" name="website"></field>
+    <field type="textarea" name="message">
+        <property notnull="1"><error>Напишите нам что-нибудь</error></property>
+    </field>
+    <field type="file" name="file">
+        <property maxfilesize="5000000"><error>Файл слишком тяжелый!</error></property>
+        <property isloaded="1"><error>Ошибка при загрузке</error></property>
+        <property isimage="1"><error>Вы можете загружать только изображения</error></property>
+    </field>
+</form>
