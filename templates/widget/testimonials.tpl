@@ -27,7 +27,7 @@
     <!-- END widget.tst -->
     </noindex>
 
-    <div class="button">Добавить отзыв</div>
+    <div class="button write">Добавить отзыв</div>
     <a href="testimonials" class="button gray">Все отзывы: {widget.testimonials.TOTAL}</a>
 </div>
 </noindex>
