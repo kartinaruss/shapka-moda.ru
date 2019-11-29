@@ -51,7 +51,7 @@
             <ul style="font-size: 15px" class="fp_points">
                 <li>Натуральный мех</li>
                 <li>Европейское качество</li>
-                <li>Гарантия 15 лет</li>
+                <li>Гарантия на товар</li>
                 <li>Обмен/возврат 30 дней</li>
                 <li>Доставка по России без предоплаты</li>
             </ul>
@@ -81,14 +81,14 @@
         	</div>
 
             <div class="price-shares">
-                <p style="color: #888!important;">Цена без акции завтра:</p>
+                <p style="color: #888!important;">Цена без акции:</p>
                 <!-- BEGIN product.price_old -->
                 <p class="price oldprice"> <span class="num" style="color: #888!important;">{product.PRICE_OLD}</span> <span style="font-size: 26px; color: #888!important;">{CURRENCY}</span></p>
                 <!-- END product.price_old -->
             </div>
 
             <div class="not price-shares">
-                <p style="color:#111 !important">Цена по акции сегодня:</p>
+                <p style="color:#111 !important">Цена по акции:</p>
                 <!-- BEGIN product.price -->
                 <p class="price currprice"> <span class="num" style="color: #ed479d !important;">{product.PRICE}</span> <span style="font-size: 40px;">{CURRENCY}</span></p>
                 <!-- END product.price -->
@@ -135,8 +135,6 @@
             </div>
         </div>
 
-        <div style="color: #ed479d; font: 600 30px 'Roboto Slab',Arial,Helvetica,sans-serif; margin: 20px 0 15px 0;text-align:center">Ведущие журналы рекомендуют</div>
-<div style="text-align: center; margin-bottom: 20px" class="overscrolls"><img src="./images/shapka_rec.png"></div>
 
         <!-- END product -->
 

@@ -11,7 +11,7 @@
                             <img class="hide-685" src="assets/img/logo3.png?{TIMER}" alt="{SITE_NAME}">
                             <span>
                             	SHAPKA-MODA
-                            	<span class="show-685">Магазин головных уборов №1 в России *</span>
+                            	<span class="show-685">Магазин головных уборов</span>
 
                             </span>
 						</a>
@@ -62,8 +62,8 @@
                                     </div>
                                     <div title="Высокое качество, натуральные материалы, гарантия 1 год">
                                         <i class="icon icon-quality"></i>
-                                        <p class="hide-1200">Высокое качество, натуральные материалы, гарантия 15 лет</p>
-                                        <p class="show-1200">Гарантия 15 лет</p>
+                                        <p class="hide-1200">Высокое качество, натуральные материалы, гарантия</p>
+                                        <p class="show-1200">Гарантия качества</p>
                                     </div>
                                 </div>
                             </div>
@@ -97,14 +97,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="akc-block-timer hide-490">
-                                <p>До конца акции осталось</p>
-                                <div id="timer1">
-                                    <div style="margin: 0px; padding: 0px"><span class="countdown-amount" id="hour1__">21</span><span class="countdown-amount" id="min1__">41</span><span class="countdown-amount-2" id="sec1__">10</span></div>
-                                    <div style="position: relative; bottom: 45px; z-index: 20"><span class="countdown-period">Часов</span><span class="countdown-period">Минут</span><span class="countdown-period">Секунд</span></div>
-                                </div>
 
-                            </div>
                         </div>
                     </div>
                 </div>

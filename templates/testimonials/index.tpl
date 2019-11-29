@@ -4,11 +4,11 @@
 <section class="reviews_text">
     <!-- BEGIN tst -->
     <article>
-        <!-- BEGIN tst.picture -->
+        <!-- BEGIN tst.picture2 -->
         <div class="reviews_text-img">
             <img src="images/people/l/{tst.picture.SRC}" alt="" width="200px">
         </div>
-        <!-- END tst.picture -->
+        <!-- END tst.picture2 -->
         <div class="reviews_text-text">
             <h6>{tst.NAME}, <span>{tst.CITY}</span></h6>
             <p>{tst.MESSAGE}</p>
