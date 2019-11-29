@@ -38,7 +38,7 @@
     <script type="text/javascript" src="./scripts/jquery.maskedinput.js"></script>
     <script type="text/javascript" src="./scripts/jquery.cookie.js"></script>
     <script type="text/javascript" src="./scripts/jquery.json.js"></script>
-    <script type="text/javascript" src="./scripts/init2.js?3"></script>
+    <script type="text/javascript" src="./scripts/init2.js?{TIMER}"></script>
     <script type="text/javascript" src="./js/main3.js"></script>
 
     <!-- Facebook Pixel Code -->
