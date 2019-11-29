@@ -120,7 +120,10 @@ $(document).ready(function () {
         block.load('testimonial', {}, function () {
             initOrderForm(block);
             bg.fadeIn(300);
-            popup.css({'top': (getBodyScrollTop() + 50) + 'px'});
+            popup.css({'top': (getBodyScrollTop() + 100) + 'px'});
+            var ww =  $(window).width();
+            if (ww<410)
+            $('.oT2 > table > tbody > tr > td + td .inputText').css('width', '188px');
             popup.show();
             $(".CloseButton", popup).add(bg).unbind().click(function () {
                 bg.fadeOut(300);
