@@ -26,6 +26,13 @@
                     <p class="discount">-52<span>%</span></p>
                 </a>
                 <!-- BEGIN product.album -->
+                <!-- temp -->
+                <!-- -->
+                <a href="images/product/l/{product.album.SRC}" title="{product.NAME}" class="fancybox" rel="gallery" style="display:none;">
+                    <img src="images/product/l/{product.album.SRC}" title="{product.NAME}" alt="{product.NAME}"/>
+                </a>
+                
+                <!-- temp -->
                 <!-- END product.album -->
             </div>
             <!-- END product.picture -->

@@ -18,6 +18,11 @@
     <link rel="stylesheet" type="text/css" href="./styles/jquery.fancybox.css">
     <link rel="stylesheet" href="/assets/css/fonts.css"><!-- ruble -->
     <link rel="stylesheet" href="/assets/css/main.css?{TIMER}">
+    
+    
+    <link rel="stylesheet" type="text/css" href="./scripts/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./scripts/slick/slick-theme.css"/>
+
 
     <link rel="icon" type="image/png" href="./favicon.png">
     <link rel="alternate" type="application/rss+xml" title="Новости интернет-магазина" href="blog/rss" />
@@ -26,10 +31,16 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
     <![endif]-->
-    <script type="text/javascript" src="./scripts/jquery.js"></script>
+    <!-- <script type="text/javascript" src="./scripts/jquery.js"></script> -->
+    
+    <script type="text/javascript" src="./scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./scripts/jquery-migrate-1.2.1.min.js"></script>
+    
     <script type="text/javascript" src="./assets/js/vendor/jquery.plugin.min.js"></script>
     <script type="text/javascript" src="./assets/js/vendor/jquery.countdown.min.js"></script>
     <script type="text/javascript" src="./assets/js/vendor/jquery.countdown-ru.js"></script>
+    
+     <script type="text/javascript" src="./scripts/slick/slick.min.js"></script>
 
     <script type="text/javascript" src="./scripts/jquery.form.js"></script>
     <script type="text/javascript" src="./scripts/jquery.easing.js"></script>

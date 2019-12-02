@@ -138,22 +138,48 @@ $(document).ready(function () {
     var showFlash = function () {
         $("iframe,object,embed").not("#vk_groups iframe, #ok_group_widget iframe").show();
     }
+    /**/
     // Fancybox
     $("a.fancybox").fancybox({
-        'transitionIn': 'elastic',
-        'transitionOut': 'elastic',
-        'speedIn': 600,
-        'speedOut': 200,
-        'overlayShow': false,
-        'hideOnOverlayClick': true
-    });
+			'transitionIn': 'elastic',
+			'transitionOut': 'elastic',
+			'speedIn': 600,
+			'speedOut': 200,
+			'overlayShow': false,
+			'hideOnOverlayClick': true
+		});	
+	
 
-    // Cycle
-    $(".cycle").cycle({
-        fx: 'fade',
-        pause: 1
+    var ww =  $(window).width();
+   
+	if(ww > 650) {
+		
+		// Cycle off
+		if(1<0)
+		$(".cycle").cycle({
+			fx: 'fade',
+			pause: 1
+		});
+	}else{
+		//$(".cycle a").wrap('<div></div>');
+		$(".album").hide();
+		$(".cycle a").show().wrap('<div></div>');
+		if (1>0)
+	 $(".cycle").slick({
+      infinite: true,
+      //dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      appendArrows: $('.cycle'),
+            //prevArrow: '<i> &lt;</i>',
+            //nextArrow: '<i> &gt;</i>'
+    	
+    	prevArrow: '<i id="prevImg">&nbsp;&nbsp;</i>',
+        nextArrow: '<i id="nextImg">&nbsp;&nbsp;</i>'
     });
-    // РџРѕРґСЃРІРµС‚РєР° РїСѓРЅРєС‚РѕРІ РјРµРЅСЋ
+		$('.item-page-tovar-left').css('padding-top', '10px');
+	}
+    // 
     $(".menu a,.menu2 a,.cats2 a").each(function (i, item) {
         var url = $(item).attr('href');
         var re = new RegExp(url + '$', 'i');

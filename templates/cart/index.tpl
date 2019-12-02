@@ -182,7 +182,7 @@
 <!-- BEGIN metrika -->
 <script type="text/javascript">
 yaCounter{metrika.COUNTER_ID}.reachGoal('BASKET_1');
-ga('set', 'dimension2','cart');
+//ga('set', 'dimension2','cart');
 fbq('track', 'AddToCart');
 </script>
 <!-- END metrika -->
