@@ -19,11 +19,11 @@
 
 		  return($ip);
 		}
-
-$mysqli=new mysqli('localhost', 'shapka', 'Y3g7F7h6', 'shapka-moda.ru');
-$sql='INSERT INTO ip SET ip="'.getip22().'", time='.time();
-$mysqli->query($sql);
-
+if (getip22() != '127.0.0.1') {
+	$mysqli=new mysqli('localhost', 'shapka', 'Y3g7F7h6', 'shapka-moda.ru');
+	$sql='INSERT INTO ip SET ip="'.getip22().'", time='.time();
+	$mysqli->query($sql);
+}
 $_COOKIE_SEO_LIFETIME = 1209600;
 if(!empty($_SERVER['QUERY_STRING'])){
     $query_string=strtolower($_SERVER['QUERY_STRING']);
