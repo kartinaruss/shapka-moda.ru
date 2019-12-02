@@ -9,7 +9,7 @@
         <!-- BEGIN visited -->
         <div  class="visited-item product-item">
 			<div class="product-name">
-                <a href="item/{cat_output.product.KEY}">{visited.NAME}</a>                
+                <a href="item/{visited.KEY}">{visited.NAME}</a>                
             </div>
             <p class="discount icon" style="font-size: 16px;margin-top: 24px;">-52<span>%</span></p>
             <!-- BEGIN visited.picture -->
