@@ -8,7 +8,10 @@
     <div class="product-items">
         <!-- BEGIN visited -->
         <div  class="visited-item product-item">
-            <p class="discount icon" style="font-size: 16px">-52<span>%</span></p>
+			<div class="product-name">
+                <a href="item/{cat_output.product.KEY}">{visited.NAME}</a>                
+            </div>
+            <p class="discount icon" style="font-size: 16px;margin-top: 24px;">-52<span>%</span></p>
             <!-- BEGIN visited.picture -->
             <div class="product-image {visited.LABEL}" style="width:190px; height:190px">
                 <a href="item/{visited.KEY}">
