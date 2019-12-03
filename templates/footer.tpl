@@ -75,6 +75,10 @@ $(document).ready(function () {//see_more
 
 					    // Выравнивание каталога после догрузки
 						var trioBrief, trioHeader, trioParam, Hbrief = 0, Hheader = 0, Hparam = 0;
+						var ww =  $(window).width();
+   
+	if(ww > 960) {// 3
+						
 						$(".main-content .product-items .product-item, .catalog .product-items .product-item").each(function (i, item) {
 
 
@@ -101,6 +105,35 @@ $(document).ready(function () {//see_more
 
 								}
 							});
+					}else{// 2
+							Hbrief = 0; Hheader = 0; Hparam = 0;
+							
+							$(".main-content .product-items .product-item, .catalog .product-items .product-item").each(function (i, item) {
+
+
+							Hheader = Math.max(Hheader, $(".product-name", item).height());
+
+							if (i % 2 == 0) {
+
+								trioHeader = $(".product-name", item);
+
+							
+
+							} else if (i % 2 == 1) {
+
+								trioHeader = trioHeader.add($(".product-name", item));
+
+								trioHeader.each(function (j, header) {
+									$(header).height(Hheader - 2);
+								});
+
+								Hheader = 0;
+
+
+								}
+							});
+						
+						}
 
 					}
 			});

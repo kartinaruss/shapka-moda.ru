@@ -194,39 +194,7 @@ $(document).ready(function () {
         nextArrow: '<i class="nextImg">&nbsp;&nbsp;</i>',
         
         responsive: [
-			/*{
-			  breakpoint: 1200, 
-			  settings: {
-				slidesToShow: 5,
-				slidesToScroll: 1
-			  }
-			},
-			{
-			  breakpoint: 1049, 
-			  settings: {
-				slidesToShow: 4,
-				slidesToScroll: 1
-			  }
-			},
-			{
-			  breakpoint: 839, 
-			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1
-			  }
-			},
-			{
-			  breakpoint: 629, 
-			  settings: {
-				slidesToShow: 2,        
-			  }
-			},
-			{
-			  breakpoint: 419, 
-			  settings: {
-				slidesToShow: 1,        
-			  }
-			}*/
+			
 			{
 			  breakpoint: 1200, 
 			  settings: {
@@ -409,6 +377,9 @@ $(document).ready(function () {
     }
     // Р’С‹СЂР°РІРЅРёРІР°РЅРёРµ РєР°С‚Р°Р»РѕРіР°
     var trioBrief, trioHeader, trioParam, Hbrief = 0, Hheader = 0, Hparam = 0;
+    //var ww =  $(window).width();
+   
+	if(ww > 960) {// 3
     $(".main-content .product-items .product-item, .item-page .product-item").each(function (i, item) {
 
         //Hbrief = Math.max(Hbrief,$(".brief",item).height()+$(".oldprice",item).height());
@@ -444,6 +415,33 @@ $(document).ready(function () {
 
         }
     });
+  }else{//2
+	  Hbrief = 0; Hheader = 0; Hparam = 0;
+	  
+	  $(".main-content .product-items .product-item, .item-page .product-item").each(function (i, item) {
+
+        
+        Hheader = Math.max(Hheader, $(".product-name", item).height());
+        
+        if (i % 2 == 0) {
+            
+            trioHeader = $(".product-name", item);
+            
+        
+        } else if (i % 2 == 1) {
+            
+            trioHeader = trioHeader.add($(".product-name", item));
+            
+            trioHeader.each(function (j, header) {
+                $(header).height(Hheader - 2);
+            });
+            
+            Hheader = 0;
+            
+
+        }
+    });
+  }
 
     // РќРѕС‡РЅР°СЏ Р°РєС†РёСЏ
     /*var hours = new Date().getHours();
