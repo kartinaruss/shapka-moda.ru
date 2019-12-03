@@ -66,7 +66,7 @@ $(document).ready(function () {//see_more
 				  url: url,
 				  success: function(data){
 					  //console.log(data);
-					  $('.main-content .product-items').append(data);
+					  $('.main-content .product-items').first().append(data);
 					  var num=el_next_page.html();
 					  //console.log(num);
 					  el_next_page.replaceWith('<i>'+num+'</i>');

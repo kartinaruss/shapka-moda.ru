@@ -590,10 +590,16 @@ header .logo a {
     background: url('../img/bg-aside-h3.png') no-repeat;
     background-position: right 0px bottom 0px
 }
+.show-1200 .widget-title {
+	
+	background-position: left 0px bottom 0px;
+}
 
 .widget-title h2, .widget-title .h2s, .page-title .h2s {
     margin: 0 0 4px 0;
 }
+
+.show-1200 .widget-title .h2s {margin-left:20px;}
 
 .widget-title h2 a, .widget-title .h2s a, .page-title .h2s a {
     font: 700 22px "Roboto Slab", Arial, Helvetica, sans-serif;
