@@ -163,8 +163,8 @@
     </div>
     <!-- END paginator -->
     <!-- END products -->
-
-
+    
+ <!-- INCLUDE widget/visited_mobile.tpl -->
 
 <!-- BEGIN content_foot -->
 <div class="catalog w border2">

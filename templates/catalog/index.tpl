@@ -81,6 +81,8 @@
     </div>
     <!-- END paginator -->
     <!-- END products -->
+    
+     <!-- INCLUDE widget/visited_mobile.tpl -->
 </div>
 <!-- END cat_output -->
 <!-- BEGIN seotext -->

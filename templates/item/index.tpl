@@ -179,6 +179,9 @@
             </div>
         </div>
         <!-- END see_also -->
+        
+        <!-- INCLUDE widget/visited_mobile.tpl -->
+        
     </div>
 </div>
 <!-- INCLUDE footer.tpl -->

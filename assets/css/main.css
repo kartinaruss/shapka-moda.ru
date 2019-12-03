@@ -3656,6 +3656,13 @@ img.toCart {
         padding: 15px;
         box-sizing: border-box;
     }
+    
+    .visited-mobile .product-item{
+        width: 16%;
+        margin: 0;
+        padding: 5px;        
+    }
+    
     .product-item .actions{
         width: 100%;
         box-sizing: border-box;
@@ -3781,6 +3788,12 @@ img.toCart {
 
     .product-item{
         width: 50%;
+    }
+    
+    .visited-mobile .product-item{
+        width: 25%;
+        margin: 0;
+        padding: 5px;        
     }
 
     .journals img{
@@ -3940,6 +3953,11 @@ img.toCart {
         width: 100%;
         text-align: center;
     }
+    
+    .visited-mobile .product-item{
+       /* width: 33%;  */     
+        
+    }
 }
 
 @media screen and (max-width: 545px){
@@ -3972,8 +3990,11 @@ img.toCart {
     .product-item{
         width: 100%;
     }
-
-
+    .visited-mobile .product-item{
+        width: 50%;
+        
+        
+    }
 }
 
 @media screen and (max-width: 495px) {
@@ -4572,7 +4593,7 @@ overflow: auto;
 							font-style: normal;
 							font-size: 1em; 
 							}
-#prevImg, #nextImg {
+.prevImg, .nextImg {
 	position: absolute;
 	top: 45%;
 	border: none;
@@ -4589,13 +4610,22 @@ overflow: auto;
 	cursor: pointer;
 }
 
-#nextImg {
+.nextImg {
 	right: 2%;
 	background: url('/styles/i/pravstrel.png') 50% no-repeat;
 	background-size: 50%;
 }
-#prevImg {
+.prevImg {
 	left: 2%;
 	background: url('/styles/i/levstrel.png') 50% no-repeat;
 	background-size: 50%;
+}
+
+ .visited-mobile .nextImg {
+	right: 1%;
+	
+}
+.visited-mobile .prevImg {
+	left: 1%;
+	
 }
