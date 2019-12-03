@@ -186,7 +186,7 @@ $(document).ready(function () {
 	$(".visited-mobile").slick({
       infinite: true,
       //dots: true,
-      slidesToShow: cols_visited_mob,
+      //slidesToShow: cols_visited_mob,
       slidesToScroll: 1,
       appendArrows: $('.visited-mobile'),
              	
@@ -194,7 +194,7 @@ $(document).ready(function () {
         nextArrow: '<i class="nextImg">&nbsp;&nbsp;</i>',
         
         responsive: [
-			{
+			/*{
 			  breakpoint: 1200, 
 			  settings: {
 				slidesToShow: 5,
@@ -225,6 +225,27 @@ $(document).ready(function () {
 			  breakpoint: 419, 
 			  settings: {
 				slidesToShow: 1,        
+			  }
+			}*/
+			{
+			  breakpoint: 1200, 
+			  settings: {
+				slidesToShow: 6,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 960, 
+			  settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1
+			  }
+			},
+			
+			{
+			  breakpoint: 545, 
+			  settings: {
+				slidesToShow: 2,        
 			  }
 			}
 		]

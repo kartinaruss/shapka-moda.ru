@@ -3683,6 +3683,12 @@ img.toCart {
     .visited-mobile .product-item .actions {	
 		width: auto;
 	}
+	.visited-mobile .product-item .actions .button.gray{	
+		font-size: 10.5px;
+	}
+	.visited-mobile .product-item .actions .button.pink{	
+		font-size: 13px;
+	}
 	
     .product-image img,
     .product-image{
@@ -3811,6 +3817,7 @@ img.toCart {
         width: 25%;
         margin: 0;
         padding: 5px;        
+        padding: 2px;        
     }
 
     .journals img{
