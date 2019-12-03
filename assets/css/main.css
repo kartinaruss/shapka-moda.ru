@@ -3657,7 +3657,14 @@ img.toCart {
         box-sizing: border-box;
     }
     
-    .visited-mobile .product-item{
+    .visited-mobile .product-item .product-image{
+       
+        margin: auto;
+            
+    }
+   
+    
+     .visited-mobile .product-item{
         width: 16%;
         margin: 0;
         padding: 5px;        
@@ -3667,6 +3674,10 @@ img.toCart {
         width: 100%;
         box-sizing: border-box;
     }
+    .visited-mobile .product-item .actions {	
+		width: auto;
+	}
+	
     .product-image img,
     .product-image{
         width: 100%;
