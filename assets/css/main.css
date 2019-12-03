@@ -4063,7 +4063,9 @@ img.toCart {
 }
 
 @media screen and (max-width: 435px) {
-
+	.visited-mobile .product-price {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 400px) {
