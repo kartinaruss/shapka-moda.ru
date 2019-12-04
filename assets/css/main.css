@@ -4704,10 +4704,10 @@ overflow: auto;
 }
 
  .visited-mobile .nextImg, .reviews-block-mobile .nextImg {
-	right: 1%;
+	right: 0%;
 	
 }
 .visited-mobile .prevImg, .reviews-block-mobile  .prevImg {
-	left: 1%;
+	left: 0%;
 	
 }
