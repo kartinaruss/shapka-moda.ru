@@ -9,11 +9,11 @@
     <!-- BEGIN widget.tst -->
     <article class="reviews-block">
         <div class="reviews-block-row">
-            <!-- BEGIN widget.tst.picture2 -->
+            <!-- BEGIN widget.tst.picture -->
             <div class="img">
                 <img src="images/people/l/{widget.tst.picture.SRC}" alt="Картинка">
             </div>
-            <!-- END widget.tst.picture2 -->
+            <!-- END widget.tst.picture -->
             <div>
                 <h6 class="autor">{widget.tst.NAME}</h6>
                 <p class="city">{widget.tst.CITY}</p>

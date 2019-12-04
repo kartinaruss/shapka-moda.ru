@@ -696,10 +696,7 @@ header .logo a {
 }
 
 .reviews-block-row .img {
-    width: 222px;
-    height: 222px;
-    margin-left: 8px;
-    margin-top: 8px;
+    
 }
 
 .reviews-block-row .img img {
@@ -714,7 +711,7 @@ header .logo a {
 
 .reviews-block-row .autor {
     font: 700 12px "Trebuchet MS", Helvetica, sans-serif;
-    margin: 7px 0 3px 4px;
+    margin: 0px 0 3px 60px;
 }
 
 .reviews-block-row p {
@@ -726,7 +723,7 @@ header .logo a {
 }
 
 .reviews-block-row .city {
-    margin: 0 0 0 4px;
+    margin: 0 0 0 60px;
 }
 
 .reviews-block-discription {
@@ -3516,6 +3513,18 @@ img.toCart {
 				font-style: normal;
 				font-weight:400;
 			}
+			
+		.reviews-block-row {
+				margin-left: -16px;
+			}
+		.reviews-block-row .img {
+				margin-top: -23px;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				overflow: hidden;
+				float: left;
+			}	
 
 
 @media screen and (max-width: 1200px) {
