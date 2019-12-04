@@ -165,6 +165,7 @@
     <!-- END products -->
     
  <!-- INCLUDE widget/visited_mobile.tpl -->
+ <!-- INCLUDE widget/testimonials_mobile.tpl -->
 
 <!-- BEGIN content_foot -->
 <div class="catalog w border2">

@@ -219,6 +219,36 @@ $(document).ready(function () {
 		]
     });
     
+		
+	if (1>0)	$(".reviews-block-mobile").slick({
+      infinite: true,     
+      
+      slidesToScroll: 1,
+      appendArrows: $('.reviews-block-mobile'),
+             	
+    	prevArrow: '<i class="prevImg">&nbsp;&nbsp;</i>',
+        nextArrow: '<i class="nextImg">&nbsp;&nbsp;</i>',
+        
+        responsive: [
+			
+			{
+			  breakpoint: 1200, 
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 960, 
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			},
+			
+		]
+    });
+    
 	}
 	
     // 

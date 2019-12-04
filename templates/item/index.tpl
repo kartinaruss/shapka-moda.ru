@@ -181,6 +181,7 @@
         <!-- END see_also -->
         
         <!-- INCLUDE widget/visited_mobile.tpl -->
+        <!-- INCLUDE widget/testimonials_mobile.tpl -->
         
     </div>
 </div>

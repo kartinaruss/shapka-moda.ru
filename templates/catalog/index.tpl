@@ -83,6 +83,7 @@
     <!-- END products -->
     
      <!-- INCLUDE widget/visited_mobile.tpl -->
+     <!-- INCLUDE widget/testimonials_mobile.tpl -->
 </div>
 <!-- END cat_output -->
 <!-- BEGIN seotext -->
