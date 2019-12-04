@@ -244,7 +244,7 @@ class Model_Product extends Model_Default
     
     function getByCategoryHit($category_id, &$total=null, $start=0, $count=1000, $disabled = false)
     {
-        $cacheKey = $this->cacheTag."_by_category_hit_{$category_id}_start_{$start}_count_{$count}_disabled_".((int)$disabled);
+        $cacheKey = $this->cacheTag."_by_category_hits_{$category_id}_start_{$start}_count_{$count}_disabled_".((int)$disabled);
         if (false === ($data = $this->cache->get($cacheKey)))
         {
 			$hits = (array)$this->db->selectPage($total,
@@ -252,7 +252,8 @@ class Model_Product extends Model_Default
                 JOIN ?_{$this->structure->getTable()} s ON s.`product_id`=p.`id`
                 WHERE s.`category_id`=?d AND p.`disabled`=0
                 ORDER BY order_count DESC, p.price ASC, p.`timestamp` DESC LIMIT 12",
-            $category_id, $start, $count
+            //$category_id, $start, $count
+            $category_id
         );
         $hit_id = [];
         foreach ($hits as $hit) {
@@ -265,12 +266,14 @@ class Model_Product extends Model_Default
                 WHERE s.`category_id`=?d { AND p.`disabled`=? }
                 AND p.id NOT IN (" . implode(',', $hit_id).")
                 ORDER BY /*s.position ASC,*/ p.price ASC,p.`timestamp` DESC LIMIT ?d,?d",
-                $category_id, !$disabled ? 0 : DBSIMPLE_SKIP, $start, $count
+                //$category_id, !$disabled ? 0 : DBSIMPLE_SKIP, $start, $count
+                $category_id, !$disabled ? 0 : DBSIMPLE_SKIP, 0, 1000
                 
         );
          
             $items = array_merge($hits, $items);
-			$data['total'] = count($items); 
+            $total = count($items); 
+			$data['total'] = $total; 
 			$data['items'] = array_slice($items, $start, $count);
 
             $this->cache->set($data, $cacheKey, array($this->cacheTag));
@@ -352,7 +355,7 @@ class Model_Product extends Model_Default
     
     function getMainHit(&$total=null, $start=0, $count=1000, $disabled = false)
     {//new for hits
-        $cacheKey = $this->cacheTag."_main_hit_start_{$start}_count_{$count}_disabled_".((int)$disabled);
+        $cacheKey = $this->cacheTag."_main_hits_start_{$start}_count_{$count}_disabled_".((int)$disabled);
         if (false === ($data = $this->cache->get($cacheKey)))
         {	
 			
@@ -372,11 +375,13 @@ class Model_Product extends Model_Default
 					WHERE `main`=1 { AND `disabled`=? } AND id NOT IN (" . implode(',', $hit_id) . ")
 					ORDER BY price ASC LIMIT ?d,?d",
                 !$disabled ? 0 : DBSIMPLE_SKIP,
-                $start, $count
+                //$start, $count
+                0, 1000
 			);			
 			            
             $items = array_merge($hits, $items);
-			$data['total'] = count($items);
+            $total = count($items);
+			$data['total'] = $total;
 			$data['items'] = array_slice($items, $start, $count);
             
             $this->cache->set($data, $cacheKey, array($this->cacheTag));
